@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
        * Eles servem apenas para demonstração acadêmica. Não são
        * leituras reais de um sensor.
        */
-      log.innerHTML = `<strong>ALERTA SIMULADO</strong><br>Palavra-chave detectada às ${time}.<br>Temperatura: 26,5 °C • Umidade: 58%.<br>Mensagem encaminhada ao responsável cadastrado.`;
+      log.innerHTML = `<strong>ALERTA SIMULADO</strong><br>Palavra-chave "SOCORRO" detectada às ${time}.<br>Temperatura: 26,5 °C • Umidade: 58%.<br>Mensagem encaminhada ao responsável cadastrado.`;
 
       /*
        * Alteramos o texto do botão para deixar claro que o usuário

@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <!--
-  PÁGINA INICIAL
-  Esta é a página de entrada do site. O HTML define o conteúdo e a estrutura;
-  o arquivo css/style.css controla a aparência; e js/script.js adiciona
-  comportamentos interativos, como o menu em telas pequenas.
+  PÁGINA INICIAL EM HTML5, CSS3 E JAVASCRIPT
+  Esta é a página principal do site.
+  O HTML define o conteúdo e a estrutura;
+  O arquivo css/style.css controla a aparência;
+  O arquivo js/script.js adiciona comportamentos interativos, como o menu em telas pequenas.
 -->
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Plataforma IoT para detecção de situações de risco com sensoriamento multimodal.">
-  <title>Monitoramento Inteligente | Início</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Monitoramento Inteligente | Início</title> <!-- Título da página -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Estilos da página -->
 </head>
 <body>
 <!-- CABEÇALHO FIXO: contém a marca, o botão do menu e os links de navegação. -->
-<header class="topbar">
-  <div class="brand"><span class="brand-mark">⌁</span><span>Monitoramento <strong>IoT</strong></span></div>
-  <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+<!-- 
+  A marca é composta por um ícone e o nome do projeto.
+  O botão do menu é exibido apenas em telas pequenas.
+  Os links de navegação levam a outras páginas do site.
+  <span> é um conteiner generico em linha para conteúdo fraseado.
+  <strong> é utilizado em conteúdos que são de "grande importância".
+  <div> é um container genérico para conteúdo de fluxo de bloco.
+  <article> representa uma composição independente em um documento, página, aplicação ou site.
+  <section> representa uma seção genérica contida em um documento HTML, que não tem um significado mais específico.
+  <footer> representa um rodapé para o seu conteúdo de seção mais próximo.
+-->
+<header class="topbar"> <!-- Cabeçalho fixo -->
+  <div class="brand"><span class="brand-mark">⌁</span><span>Monitoramento <strong>IoT</strong></span></div> <!-- Marca -->
+  <button class="menu-toggle" aria-label="Abrir menu">☰</button> <!-- Botão do menu -->
   <nav class="nav">
     <a class="active" href="index.html">Início</a>
     <a href="projeto.html">Projeto</a>
@@ -30,25 +42,31 @@
 
 <main>
 <!-- CONTEÚDO PRINCIPAL: cada <section> representa uma parte visual da página. -->
-  <section class="hero">
-    <div class="hero-content">
-      <span class="eyebrow">PROJETO IoT • APRESENTAÇÃO FINAL</span>
-      <h1>Monitoramento Inteligente e Multimodal para Ambientes Fechados</h1>
-      <p>Protótipo de baixo custo para detectar situações de risco por meio de voz, fumaça, temperatura e umidade, enviando alertas a pessoas cadastradas.</p>
-      <div class="actions">
-        <a class="btn primary" href="projeto.html">Conhecer o projeto →</a>
-        <a class="btn secondary" href="arquitetura.html">Ver arquitetura</a>
+<!-- 
+  A primeira seção é o "hero", que apresenta o projeto com título, descrição e links.
+  A segunda seção mostra uma visão geral do projeto com cards de recursos.
+  A terceira seção exibe uma imagem do protótipo.
+  A quarta seção apresenta o objetivo do projeto e métricas importantes.
+-->
+  <section class="hero"> <!-- Seção principal com call-to-action -->
+    <div class="hero-content"> <!-- Conteúdo do hero -->
+      <span class="eyebrow">PROJETO IoT • APRESENTAÇÃO FINAL</span> <!-- "eyebrow" é um termo de design para um pequeno texto acima do título principal. -->
+      <h1>Monitoramento Inteligente e Multimodal para Ambientes Fechados</h1> <!-- Título principal -->
+      <p>Protótipo de baixo custo para detectar situações de risco por meio de voz, fumaça, temperatura e umidade, enviando alertas a pessoas cadastradas.</p> <!-- Descrição do projeto -->
+      <div class="actions"> <!-- Botões de ação -->
+        <a class="btn primary" href="projeto.html">Conhecer o projeto →</a> <!-- Botão principal com link para a página do projeto -->
+        <a class="btn secondary" href="arquitetura.html">Ver arquitetura</a> <!-- Botão secundário com link para a página da arquitetura -->
       </div>
     </div>
     <div class="hero-visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/ESP32_Dev_Board.jpg/1280px-ESP32_Dev_Board.jpg" alt="Placa ESP32 em uma protoboard"><div class="hero-visual-caption">ESP32 • prototipagem IoT</div></div>
   </section>
 
-  <section class="section">
+  <section class="section"> <!-- Seção de visão geral -->
     <div class="section-title">
       <span class="eyebrow">VISÃO GERAL</span>
       <h2>Uma solução simples para um problema importante</h2>
     </div>
-    <div class="cards three">
+    <div class="cards three"> 
       <article class="card image-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Microphone.jpg/1161px-Microphone.jpg" alt="Microfone"><div class="card-body"><h3>Reconhecimento de voz</h3><p>Modelo de IA para identificar palavras-chave relacionadas a pedidos de ajuda.</p></div></article>
       <article class="card image-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Smoke_Detector_%289420220532%29.jpg/1280px-Smoke_Detector_%289420220532%29.jpg" alt="Detector de fumaça"><div class="card-body"><h3>Sensoriamento</h3><p>Detecção de fumaça e coleta de temperatura e umidade no momento da ocorrência.</p></div></article>
       <article class="card image-card"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Wi-fi_router.jpg/1280px-Wi-fi_router.jpg" alt="Roteador Wi-Fi"><div class="card-body"><h3>Alerta remoto</h3><p>Envio de mensagem de texto para responsáveis cadastrados utilizando conectividade Wi-Fi.</p></div></article>
@@ -61,7 +79,7 @@
       <h2>Detectar. Informar. Apoiar uma resposta rápida.</h2>
       <p>O protótipo foi pensado para ambientes internos onde pessoas possam estar vulneráveis, com foco inicial em banheiros e vestiários públicos.</p>
     </div>
-    <div class="metrics">
+    <div class="metrics"> 
       <div><strong>80%+</strong><span>assertividade esperada nos testes de IA</span></div>
       <div><strong>R$ 300</strong><span>custo total estimado do protótipo</span></div>
       <div><strong>48 h</strong><span>operação contínua prevista para teste</span></div>
@@ -70,8 +88,15 @@
 </main>
 
 <!-- RODAPÉ: informações finais e tecnologias utilizadas no desenvolvimento. -->
+<!-- 
+  O rodapé contém o nome do projeto, o autor e as tecnologias utilizadas.
+  O JavaScript é carregado no final da página para que o HTML já esteja disponível quando o script executar.
+-->
 <footer><span>Projeto acadêmico IoT • Moisés Lúcio Moreira</span><span>HTML5 • CSS3 • JavaScript</span></footer>
 <!-- Carrega o JavaScript no final da página para que o HTML já esteja disponível quando o script executar. -->
+<!-- 
+  O arquivo js/script.js adiciona comportamentos interativos, como o menu em telas pequenas.
+-->
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
-# Projeto IoT Web Multipáginas — versão comentada
+# Página em HTML5 do Projeto IoT Web
 
-Esta versão mantém o site original, mas adiciona comentários didáticos no HTML, CSS e JavaScript.
+Esta é a versão final do site, e adicionamos comentários no HTML, CSS e JavaScript.
 
 ## Como abrir
 1. Extraia o ZIP.
