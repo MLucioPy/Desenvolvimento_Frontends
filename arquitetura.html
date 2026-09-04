@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+  PÁGINA "ARQUITETURA"
+  Mostra o caminho dos dados: sensores -> ESP32 -> Wi-Fi/MQTT -> alerta.
+  A área de simulação possui IDs específicos para que o JavaScript consiga
+  localizar os elementos e alterar seu conteúdo quando o botão é clicado.
+-->
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Arquitetura | Monitoramento IoT</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<!-- CABEÇALHO FIXO: contém a marca, o botão do menu e os links de navegação. -->
+<header class="topbar"><div class="brand"><span class="brand-mark">⌁</span><span>Monitoramento <strong>IoT</strong></span></div><button class="menu-toggle" aria-label="Abrir menu">☰</button><nav class="nav"><a href="index.html">Início</a><a href="projeto.html">Projeto</a><a class="active" href="arquitetura.html">Arquitetura</a><a href="componentes.html">Componentes</a><a href="cronograma.html">Cronograma</a><a href="resultados.html">Resultados</a></nav></header>
+<main>
+<!-- CONTEÚDO PRINCIPAL: cada <section> representa uma parte visual da página. -->
+<section class="page-header"><span class="eyebrow">02 • ARQUITETURA</span><h1>Como a solução funciona</h1><p>Fluxo simplificado da coleta até o alerta.</p></section>
+<section class="section">
+<div class="architecture">
+<div class="arch-node"><span>01</span><strong>Sensores</strong><small>Microfone • Fumaça • AHT21</small></div>
+<div class="arrow">→</div>
+<div class="arch-node highlight"><span>02</span><strong>ESP32-S3</strong><small>Processamento e lógica do protótipo</small></div>
+<div class="arrow">→</div>
+<div class="arch-node"><span>03</span><strong>Wi-Fi / MQTT</strong><small>Comunicação de dados</small></div>
+<div class="arrow">→</div>
+<div class="arch-node"><span>04</span><strong>Alerta</strong><small>Mensagem para celular cadastrado</small></div>
+</div>
+</section>
+<section class="section"><div class="section-title"><span class="eyebrow">CONECTIVIDADE</span><h2>Comunicação sem fio</h2><p>O ESP32 utiliza Wi-Fi para transportar os dados do protótipo e permitir a geração do alerta remoto.</p></div><img class="page-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Wi-fi_router.jpg/1280px-Wi-fi_router.jpg" alt="Roteador Wi-Fi representando a conectividade do sistema"></section>
+<section class="section alt">
+<div class="content-grid">
+<div><h2>Fluxo de operação</h2><ol class="steps"><li><strong>Monitoramento:</strong> o dispositivo permanece instalado no ambiente.</li><li><strong>Detecção:</strong> palavra-chave ou fumaça dispara uma ocorrência.</li><li><strong>Contexto:</strong> temperatura e umidade são coletadas.</li><li><strong>Comunicação:</strong> o ESP32 utiliza Wi-Fi e MQTT.</li><li><strong>Alerta:</strong> responsáveis cadastrados recebem a mensagem.</li></ol></div>
+<div class="simulator"><span class="eyebrow">SIMULAÇÃO</span><h3>Teste de ocorrência</h3><p id="sim-status">Sistema em monitoramento.</p><button class="btn primary" id="simulate">Simular alerta</button><div class="alert-log" id="alert-log">Nenhuma ocorrência simulada.</div></div>
+</div>
+</section>
+</main><!-- RODAPÉ: informações finais e tecnologias utilizadas no desenvolvimento. -->
+<footer><span>Projeto acadêmico IoT • Moisés Lúcio Moreira</span><span>HTML5 • CSS3 • JavaScript</span></footer><!-- Carrega o JavaScript no final da página para que o HTML já esteja disponível quando o script executar. -->
+<script src="js/script.js"></script></body></html>

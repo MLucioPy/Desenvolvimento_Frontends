@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+  PÁGINA "RESULTADOS"
+  Apresenta os critérios de aceitação e as metas do protótipo.
+  A barra de 80% é uma representação visual da meta definida no projeto;
+  ela não é calculada automaticamente pelo JavaScript.
+-->
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Resultados | Monitoramento IoT</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<!-- CABEÇALHO FIXO: contém a marca, o botão do menu e os links de navegação. -->
+<header class="topbar"><div class="brand"><span class="brand-mark">⌁</span><span>Monitoramento <strong>IoT</strong></span></div><button class="menu-toggle" aria-label="Abrir menu">☰</button><nav class="nav"><a href="index.html">Início</a><a href="projeto.html">Projeto</a><a href="arquitetura.html">Arquitetura</a><a href="componentes.html">Componentes</a><a href="cronograma.html">Cronograma</a><a class="active" href="resultados.html">Resultados</a></nav></header>
+<main>
+<!-- CONTEÚDO PRINCIPAL: cada <section> representa uma parte visual da página. -->
+<section class="page-header"><span class="eyebrow">05 • VALIDAÇÃO</span><h1>Critérios de aceitação</h1><p>Indicadores definidos para demonstrar o funcionamento do protótipo.</p></section>
+<section class="section">
+<div class="result-grid">
+<article class="result-card"><span class="result-number">01</span><h3>Coleta de dados</h3><p>Modelo de IA com mais de 80% de assertividade e repetibilidade nos testes, incluindo testes reais.</p><div class="progress"><i style="width:80%"></i></div><small>Meta: ≥ 80%</small></article>
+<article class="result-card"><span class="result-number">02</span><h3>Transmissão</h3><p>Mensagens de texto com o menor delay possível após a ocorrência detectada.</p><div class="big-value">LOW DELAY</div><small>Critério qualitativo</small></article>
+<article class="result-card"><span class="result-number">03</span><h3>Autonomia / estabilidade</h3><p>Operação ininterrupta durante 48 horas sem travamento ou diagnósticos errôneos da IA.</p><div class="big-value">48 h</div><small>Teste de estabilidade</small></article>
+</div>
+</section>
+<section class="section"><div class="section-title"><span class="eyebrow">VALIDAÇÃO VISUAL</span><h2>Infraestrutura de comunicação</h2><p>A conectividade é parte essencial para transformar uma ocorrência local em um alerta remoto.</p></div><img class="page-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Wi-fi_router.jpg/1280px-Wi-fi_router.jpg" alt="Equipamento de rede Wi-Fi"></section>
+<section class="section alt">
+<div class="content-grid">
+<div><h2>Definition of Done</h2><ul class="checklist"><li>Dispositivo físico montado e funcionando</li><li>Código fonte versionado no GitHub</li><li>Documentação técnica completa</li><li>Apresentação final realizada</li></ul></div>
+<div class="info-box"><span class="eyebrow">LIMITAÇÃO DEFINIDA</span><h3>Sem dashboard</h3><p>O projeto não prevê dashboard. O armazenamento das mensagens fica a critério do responsável pelo celular.</p></div>
+</div>
+</section>
+<section class="section conclusion"><span class="eyebrow">CONCLUSÃO</span><h2>Uma arquitetura enxuta, de baixo custo e orientada à resposta rápida.</h2><p>O maior desafio técnico identificado é o desenvolvimento do dataset e do modelo de IA para reconhecimento das palavras-chave.</p></section>
+</main><!-- RODAPÉ: informações finais e tecnologias utilizadas no desenvolvimento. -->
+<footer><span>Projeto acadêmico IoT • Moisés Lúcio Moreira</span><span>HTML5 • CSS3 • JavaScript</span></footer><!-- Carrega o JavaScript no final da página para que o HTML já esteja disponível quando o script executar. -->
+<script src="js/script.js"></script></body></html>

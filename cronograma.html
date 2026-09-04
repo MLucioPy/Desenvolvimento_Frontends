@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+  PÁGINA "CRONOGRAMA"
+  A linha do tempo representa as etapas de desenvolvimento do projeto.
+  O conteúdo é somente informativo; não há banco de dados nem cálculo
+  automático de datas nesta versão.
+-->
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cronograma | Monitoramento IoT</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<!-- CABEÇALHO FIXO: contém a marca, o botão do menu e os links de navegação. -->
+<header class="topbar"><div class="brand"><span class="brand-mark">⌁</span><span>Monitoramento <strong>IoT</strong></span></div><button class="menu-toggle" aria-label="Abrir menu">☰</button><nav class="nav"><a href="index.html">Início</a><a href="projeto.html">Projeto</a><a href="arquitetura.html">Arquitetura</a><a href="componentes.html">Componentes</a><a class="active" href="cronograma.html">Cronograma</a><a href="resultados.html">Resultados</a></nav></header>
+<main>
+<!-- CONTEÚDO PRINCIPAL: cada <section> representa uma parte visual da página. -->
+<section class="page-header"><span class="eyebrow">04 • EXECUÇÃO</span><h1>Cronograma do projeto</h1><p>Principais etapas planejadas para desenvolvimento e consolidação.</p></section>
+<section class="section"><div class="timeline">
+<div class="timeline-item"><span>01</span><div><small>Agosto</small><h3>Diagrama e estudo do detector</h3><p>Diagrama elétrico e estudo para reaproveitamento do material.</p></div></div>
+<div class="timeline-item"><span>02</span><div><small>Agosto</small><h3>Integração ESP32 + sensores</h3><p>Protoboard, sensores e lógica de testes iniciais.</p></div></div>
+<div class="timeline-item"><span>03</span><div><small>Agosto / Setembro</small><h3>Wi-Fi e mensagens</h3><p>Implementação da comunicação e testes com MQTT.</p></div></div>
+<div class="timeline-item"><span>04</span><div><small>Setembro / Outubro</small><h3>Dataset e treinamento</h3><p>Construção do dataset e treinamento do modelo de reconhecimento.</p></div></div>
+<div class="timeline-item"><span>05</span><div><small>Outubro / Novembro</small><h3>Testes e consolidação</h3><p>Testes, ajustes e consolidação da aplicação.</p></div></div>
+<div class="timeline-item"><span>06</span><div><small>Novembro / Dezembro</small><h3>Documentação final</h3><p>Documentação técnica e preparação do projeto final.</p></div></div>
+</div></section>
+<section class="section"><div class="section-title"><span class="eyebrow">DESENVOLVIMENTO</span><h2>Montagem e integração</h2></div><img class="page-image" src="https://images.unsplash.com/photo-1634452015397-ad0686a2ae2d?auto=format&fit=crop&fm=jpg&q=80&w=1600" alt="Montagem de circuito eletrônico em protoboard"></section>
+<section class="section alt"><div class="warning"><strong>⚠ Principal risco:</strong> modelagem e treinamento da IA para reconhecimento das palavras-chave. O relatório aponta essa etapa como o maior risco de atraso.</div></section>
+</main><!-- RODAPÉ: informações finais e tecnologias utilizadas no desenvolvimento. -->
+<footer><span>Projeto acadêmico IoT • Moisés Lúcio Moreira</span><span>HTML5 • CSS3 • JavaScript</span></footer><!-- Carrega o JavaScript no final da página para que o HTML já esteja disponível quando o script executar. -->
+<script src="js/script.js"></script></body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+  PÁGINA "PROJETO"
+  Aqui apresentamos o problema, o objetivo, os requisitos e o escopo.
+  A organização em <section>, <div>, <article> e <aside> facilita a leitura
+  e permite que o CSS organize cada bloco visualmente.
+-->
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Projeto | Monitoramento IoT</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<!-- CABEÇALHO FIXO: contém a marca, o botão do menu e os links de navegação. -->
+<header class="topbar"><div class="brand"><span class="brand-mark">⌁</span><span>Monitoramento <strong>IoT</strong></span></div><button class="menu-toggle" aria-label="Abrir menu">☰</button><nav class="nav"><a href="index.html">Início</a><a class="active" href="projeto.html">Projeto</a><a href="arquitetura.html">Arquitetura</a><a href="componentes.html">Componentes</a><a href="cronograma.html">Cronograma</a><a href="resultados.html">Resultados</a></nav></header>
+<main>
+<!-- CONTEÚDO PRINCIPAL: cada <section> representa uma parte visual da página. -->
+<section class="page-header"><span class="eyebrow">01 • O PROJETO</span><h1>Problema, objetivos e escopo</h1><p>Entenda por que a solução foi proposta e o que faz parte do protótipo.</p></section>
+<section class="section">
+<div class="content-grid">
+<div><h2>Problema</h2><p>A proposta busca reduzir a dificuldade de identificação rápida de situações de emergência em ambientes fechados, especialmente locais como banheiros e vestiários onde pessoas podem estar mais vulneráveis.</p><h2>Objetivo principal</h2><p>Desenvolver um protótipo funcional capaz de detectar situações de risco e enviar mensagens de texto para aparelhos cadastrados, incluindo temperatura e umidade no alerta.</p></div>
+<aside class="info-box"><span class="eyebrow">FOCO INICIAL</span><h3>Ambientes fechados</h3><p>Banheiros e vestiários públicos, com possibilidade de aplicação em outros ambientes internos.</p><img class="page-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Smoke_Detector_%289420220532%29.jpg/1280px-Smoke_Detector_%289420220532%29.jpg" alt="Detector de fumaça instalado em ambiente interno"></aside>
+</div>
+</section>
+<section class="section alt">
+<h2>Requisitos essenciais</h2>
+<div class="cards three">
+<article class="card"><span class="tag essential">RF01</span><h3>Palavras-chave</h3><p>Captura por microfone, reconhecimento por IA e envio de alerta.</p></article>
+<article class="card"><span class="tag essential">RF02</span><h3>Fumaça</h3><p>Detecção convencional de fumaça e envio de mensagem.</p></article>
+<article class="card"><span class="tag important">RF04</span><h3>Temperatura e umidade</h3><p>Coleta e envio desses dados no momento da ocorrência.</p></article>
+</div>
+</section>
+<section class="section">
+<h2>Escopo</h2>
+<div class="scope"><div><h3>✓ In Scope</h3><p>IA para palavras-chave, microfone, detector de fumaça, temperatura, umidade, Wi-Fi e comunicação.</p></div><div><h3>× Out of Scope</h3><p>Banco de dados e gravação de voz de terceiros não fazem parte do protótipo.</p></div></div>
+</section>
+</main><!-- RODAPÉ: informações finais e tecnologias utilizadas no desenvolvimento. -->
+<footer><span>Projeto acadêmico IoT • Moisés Lúcio Moreira</span><span>HTML5 • CSS3 • JavaScript</span></footer><!-- Carrega o JavaScript no final da página para que o HTML já esteja disponível quando o script executar. -->
+<script src="js/script.js"></script></body></html>
